@@ -1,0 +1,14 @@
+### Additions
+- Added compat for BetterEnd
+- Added compat for BetterNether
+- Added compat for Let's Do Brewery
+- Added compat for Let's Do Vinery
+- Added compat for Create Nuclear
+- Added compat for Deeper and Darker
+- Added compat for Illager Invasion
+- Added compat for Mutant Monsters
+- Added compat for Naturalist
+- Added compat for It Takes a Pillage
+- Added compat for Valarian Conquest
+- Added compat for Undead Revamped
+- Thanks to Viltiris and Boodahbob for helping support these mods!
