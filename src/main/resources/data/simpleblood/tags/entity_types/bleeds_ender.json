@@ -3,6 +3,14 @@
   "values": [
     "minecraft:enderman",
     "minecraft:ender_dragon",
-    "minecraft:endermite"
+    "minecraft:endermite",
+    {
+      "required": false,
+      "id": "#simpleblood:compat/mutantmonsters_ender"
+    },
+    {
+      "required": false,
+      "id": "#simpleblood:compat/betterend_bleeds_ender"
+    }
   ]
 }
