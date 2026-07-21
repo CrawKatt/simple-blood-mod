@@ -7,6 +7,7 @@
     "minecraft:evoker",
     "minecraft:illusioner",
     "minecraft:vindicator",
+    "minecraft:villager",
     "minecraft:zombie",
     "minecraft:husk",
     "minecraft:player",
@@ -25,23 +26,39 @@
     "minecraft:polar_bear",
     {
       "required": false,
-      "id": "#simpleblood:compat/irons_spellbooks_bleeds"
+      "id": "#simpleblood:compat/mutantmonsters_bleeds"
     },
     {
       "required": false,
-      "id": "#simpleblood:compat/guardvillagers_bleeds"
+      "id": "#simpleblood:compat/takesapillage_bleeds"
     },
     {
       "required": false,
-      "id": "#simpleblood:compat/iceandfire_bleeds"
+      "id": "#simpleblood:compat/illagerinvasion_bleeds"
     },
     {
       "required": false,
-      "id": "#simpleblood:compat/aether_bleeds"
+      "id": "#simpleblood:compat/valarian_conquest_bleeds"
     },
     {
       "required": false,
-      "id": "#simpleblood:compat/born_in_chaos_bleeds"
+      "id": "#simpleblood:compat/betternether_bleeds"
+    },
+    {
+      "required": false,
+      "id": "#simpleblood:compat/naturalist_bleeds"
+    },
+    {
+      "required": false,
+      "id": "#simpleblood:compat/benssharks_bleeds"
+    },
+    {
+      "required": false,
+      "id": "#simpleblood:compat/letsdo_bleeds"
+    },
+    {
+      "required": false,
+      "id": "#simpleblood:compat/undead_revamp2_bleeds"
     }
   ]
 }
