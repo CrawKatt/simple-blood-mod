@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "required": false,
+      "id": "vinery:mule"
+    },
+    {
+      "required": false,
+      "id": "vinery:wandering_winemaker"
+    }
+  ]
+}
