@@ -3,6 +3,7 @@ plugins {
     id 'idea'
     id 'maven-publish'
     id 'net.neoforged.gradle.userdev' version '7.0.182'
+    id 'me.modmuss50.mod-publish-plugin' version '2.1.1'
 }
 
 version = mod_version
@@ -173,4 +174,36 @@ idea {
         downloadSources = true
         downloadJavadoc = true
     }
+}
+
+publishMods {
+    def loader = "neoforge"
+    def projectCurseforge = "1579118"
+    def projectModrinth = "l7Ddlxg5"
+    def slug = "irons-simple-blood"
+    def latestChangesContent = project.file("LATEST_CHANGES.MD").text
+
+    displayName = "${mod_id}-${mod_version}"
+    changelog = """
+${latestChangesContent}
+""".stripMargin().trim()
+    type = STABLE
+    modLoaders.add(loader)
+    file = tasks.jar.archiveFile
+
+    curseforge {
+        accessToken = System.getenv("CURSEFORGE_PUBLISH")
+        projectId = projectCurseforge
+        projectSlug = slug
+        minecraftVersions.add(minecraft_version)
+        client=true
+        server=true
+    }
+    modrinth {
+        accessToken = System.getenv("MODRINTH_PUBLISH")
+        projectId = projectModrinth
+        minecraftVersions.add(minecraft_version)
+        environment = CLIENT_AND_SERVER
+    }
+
 }
