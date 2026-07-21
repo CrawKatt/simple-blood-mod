@@ -55,6 +55,10 @@
     {
       "required": false,
       "id": "#simpleblood:compat/letsdo_bleeds"
+    },
+    {
+      "required": false,
+      "id": "#simpleblood:compat/undead_revamp2_bleeds"
     }
   ]
 }
