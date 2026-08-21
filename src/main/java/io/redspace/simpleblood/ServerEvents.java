@@ -46,7 +46,6 @@ public class ServerEvents {
         if (entity.level().isClientSide() || bloodConfigFor(entity) == null) {
             return;
         }
-event.getContainer().setPostAttackInvulnerabilityTicks(0);
         float damage = event.getContainer().getNewDamage();
         if (damage <= 0 || damage == Float.MAX_VALUE) {
             return;
