@@ -2,6 +2,7 @@ package io.redspace.simpleblood;
 
 import com.mojang.logging.LogUtils;
 import io.redspace.simpleblood.client.ClientConfig;
+import io.redspace.simpleblood.registry.AttachmentRegistry;
 import io.redspace.simpleblood.registry.ParticleRegistry;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.bus.api.SubscribeEvent;
@@ -22,6 +23,7 @@ public class IronsSimpleBloodMod {
 
     public IronsSimpleBloodMod(IEventBus modEventBus, ModContainer modContainer) {
         ParticleRegistry.register(modEventBus);
+        AttachmentRegistry.register(modEventBus);
         modContainer.registerConfig(ModConfig.Type.CLIENT, ClientConfig.SPEC, String.format("%s-client.toml", IronsSimpleBloodMod.MODID));
     }
 }
