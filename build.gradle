@@ -84,7 +84,6 @@ jarJar.enable()
 dependencies {
     // FORGE ******************************************************************************************************
     implementation "net.neoforged:neoforge:${neo_version}"
-
 }
 
 tasks.withType(ProcessResources).configureEach {
