@@ -46,7 +46,6 @@ public class ServerEvents {
         if (entity.level().isClientSide() || bloodConfigFor(entity) == null) {
             return;
         }
-        entity.invulnerableTime = 0;
         float damage = event.getAmount();
         if (damage <= 0 || damage == Float.MAX_VALUE) {
             return;
@@ -62,7 +61,7 @@ public class ServerEvents {
 
         damage = Math.min(damage, 2000);
         var level = entity.level();
-        AABB aabb = entity.isMultipartEntity() ? entity.getParts()[entity.getRandom().nextInt(entity.getParts().length)].getBoundingBox() : entity.getBoundingBox();
+        AABB aabb = entity.isMultipartEntity() ? entity.getParts()[entity.level().getRandom().nextInt(entity.getParts().length)].getBoundingBox() : entity.getBoundingBox();
         Vec3 vec = aabb.getCenter();
         int count = (int) (damage / config.minDamage())
                 + level.random.nextIntBetweenInclusive(0, (int) (2 * (damage - config.minDamage()) / config.maxDamage()));
