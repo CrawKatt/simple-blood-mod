@@ -67,6 +67,26 @@
     {
       "required": false,
       "id": "#simpleblood:compat/crittersandcompanions_bleeds"
+    },
+    {
+      "required": false,
+      "id": "#simpleblood:compat/irons_spellbooks_bleeds"
+    },
+    {
+      "required": false,
+      "id": "#simpleblood:compat/guardvillagers_bleeds"
+    },
+    {
+      "required": false,
+      "id": "#simpleblood:compat/iceandfire_bleeds"
+    },
+    {
+      "required": false,
+      "id": "#simpleblood:compat/aether_bleeds"
+    },
+    {
+      "required": false,
+      "id": "#simpleblood:compat/born_in_chaos_bleeds"
     }
   ]
 }
